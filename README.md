@@ -154,28 +154,21 @@ Slicers:Interactive Filters
 <img width="885" height="440" alt="dashboad" src="https://github.com/user-attachments/assets/d6c82534-8ed4-4605-9b8f-d84385e63a71" />
 
 📊 Analysis: Detailed Findings & Statistical Insights
-
-1. Fare Distribution
-
+🚗 1. Fare Distribution
 Most Uber fares fall within $5–$20
-
 
 Box plot visualizations identified outliers exceeding $100 (likely airport/long-distance rides)
 
 Slightly higher fares during peak hours due to high demand
 
 ⏰ 2. Time-Based Ride Patterns
-
 Busiest hours: 7–9 AM and 5–7 PM (commute times)
-
 
 Friday and Saturday show highest ride activity
 
-
 Summer months see higher monthly trends in rides
 
-3. Geographic Trends
-4. 
+📍 3. Geographic Trends
 Pickup concentrations in central NYC
 
 Hotspots include Midtown and Lower Manhattan
@@ -183,44 +176,53 @@ Hotspots include Midtown and Lower Manhattan
 Heatmaps show higher fare zones near airports and business hubs
 
 📈 4. Correlations & Metrics
-
 Positive correlation between distance and fare
 
 Longer ride durations usually result in higher prices
 
 Fare per km is consistent, but slightly higher during peak hours
 
- Key Results: Discoveries and Pattern Identification
- 
+🔍 Key Results: Discoveries and Pattern Identification
 Insight Area	Finding
-
 Peak Ride Hours	Morning (7–9 AM) and Evening (5–7 PM)
-
 Weekly Trends	Highest activity on Fridays and Saturdays
-
 Fare Patterns	Most rides cost $5–$20, few exceed $100
-
 Geographic Hotspots	Central Manhattan and Airport Areas
+Distance vs Fare	Strong positive correlation
+Seasonal Trends	Increased rides in summer
+Peak Time Impact	Slight fare surge during high demand hours
 
-
-Conclusion
+🧠 Conclusion
 Uber ride demand peaks during commute times
 
 Weekend activity is consistently high, especially Fridays and Saturdays
 
 Majority of fares are economical, with occasional high outliers
 
+Central NYC and airport routes see the highest demand
 
+Strong correlation between distance and fare
+
+Summer months see a noticeable increase in ride frequency
+
+Peak hours come with slightly elevated fare averages
 
  Recommendations: Data-Driven Suggestions
 Increase Driver Availability: Prioritize peak times (7–9 AM, 5–7 PM)
 
 Weekend Offers: Promote discounts on Fridays/Saturdays
 
+Airport Pricing Strategy: Consider flat-rate or transparent fare policies
+
+Hotspot Optimization: Deploy more drivers in Midtown & Lower Manhattan
+
+Prepare for Seasonal Demand: Launch summer incentives for drivers
+
+Off-Peak Promotions: Encourage rides with reduced fares during low-demand hours
+
 Fare Estimation Enhancement: Improve algorithms using fare-per-km insights
 
 💾 File Export
-
 The cleaned dataset with new features was saved as:
 
 plaintext
