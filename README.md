@@ -71,6 +71,7 @@ Used Pandas to load and inspect data
    
 Hour, day, month extracted from timestamps
 
+
 <img width="690" height="331" alt="image" src="https://github.com/user-attachments/assets/5a39efbf-beec-44c5-9648-55876c904d3e" />
 
 
@@ -79,16 +80,22 @@ Hour, day, month extracted from timestamps
 
 <img width="526" height="170" alt="image" src="https://github.com/user-attachments/assets/5f87f8c2-f63c-4994-a6d9-95c50a5848ae" />
 
+
 Confirmed Extracted Features:
+
 
 <img width="808" height="343" alt="image" src="https://github.com/user-attachments/assets/f66b7470-f466-4189-b76d-57425c99ef9d" />
 
 
 Day of week categorization
 
+
 <img width="652" height="403" alt="image" src="https://github.com/user-attachments/assets/7a0b84c6-5cf9-453c-a9dc-108079426cd2" />
 
+
 Peak/off-peak time indicators
+
+
 <img width="620" height="474" alt="image" src="https://github.com/user-attachments/assets/506cfd97-a059-4a7a-aa0a-e53e9b019415" />
 
 
