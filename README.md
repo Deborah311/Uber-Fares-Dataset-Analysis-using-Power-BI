@@ -84,6 +84,13 @@ Confirmed Extracted Features:
 <img width="808" height="343" alt="image" src="https://github.com/user-attachments/assets/f66b7470-f466-4189-b76d-57425c99ef9d" />
 
 
+Day of week categorization
+
+<img width="652" height="403" alt="image" src="https://github.com/user-attachments/assets/7a0b84c6-5cf9-453c-a9dc-108079426cd2" />
+
+Peak/off-peak time indicators
+<img width="620" height="474" alt="image" src="https://github.com/user-attachments/assets/506cfd97-a059-4a7a-aa0a-e53e9b019415" />
+
 
 👤 Developed by
 Your Name : MURUNGI DEBORAH
