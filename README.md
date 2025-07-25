@@ -55,6 +55,9 @@ Used Pandas to load and inspect data
 <img width="1052" height="563" alt="PIP INSTALLATION" src="https://github.com/user-attachments/assets/f9815c6a-4d5c-4f48-bc06-8e91bf1bf6e1" />
 
 <img width="428" height="412" alt="IMPORTPANDAS" src="https://github.com/user-attachments/assets/8d10f32d-1e48-46cb-8cf2-6ccd700c9600" />
+<img width="564" height="549" alt="image" src="https://github.com/user-attachments/assets/a29526ea-619d-4440-85cb-909137594979" />
+<img width="439" height="550" alt="image" src="https://github.com/user-attachments/assets/933a83d5-3bf8-41fa-9c38-bf21deb199d6" />
+<img width="649" height="362" alt="summary" src="https://github.com/user-attachments/assets/e0d882b0-a7f4-49e3-93d8-d1b8681c9468" />
 
 
 
