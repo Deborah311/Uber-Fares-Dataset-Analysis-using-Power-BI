@@ -99,6 +99,13 @@ Peak/off-peak time indicators
 <img width="620" height="474" alt="image" src="https://github.com/user-attachments/assets/506cfd97-a059-4a7a-aa0a-e53e9b019415" />
 
 
+📊 4. Power BI Analysis
+
+
+Imported dataset into Power BI Desktop
+
+<img width="1324" height="495" alt="image" src="https://github.com/user-attachments/assets/912a6556-da3d-4d39-ac82-6537bd2d63c3" />
+
 👤 Developed by
 Your Name : MURUNGI DEBORAH
 ID : 26020
