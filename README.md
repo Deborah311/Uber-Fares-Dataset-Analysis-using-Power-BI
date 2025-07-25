@@ -55,6 +55,10 @@ Used Pandas to load and inspect data
 
 <img width="428" height="412" alt="IMPORTPANDAS" src="https://github.com/user-attachments/assets/8d10f32d-1e48-46cb-8cf2-6ccd700c9600" />
 
+<img width="989" height="357" alt="image" src="https://github.com/user-attachments/assets/a4fa264b-fb03-4708-a975-c31548a9c07d" />
+
+<img width="852" height="422" alt="image" src="https://github.com/user-attachments/assets/319f44e1-bf54-4008-ad9a-d982a1962cbe" />
+<img width="311" height="230" alt="image" src="https://github.com/user-attachments/assets/9731219a-caac-4012-ad08-a92dd17b333d" />
 
 
 
