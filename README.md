@@ -66,6 +66,7 @@ Used Pandas to load and inspect data
 # Check for missing values
 
 print("Missing values:")
+
 print(uber_df.isnull().sum())
 
 # Check for duplicates
@@ -98,21 +99,27 @@ if 'passenger_count' in uber_df_clean.columns:
 uber_df_clean['pickup_datetime'] = pd.to_datetime(uber_df_clean['pickup_datetime'], errors='coerce')
 
 # Remove invalid fare values
+
 uber_df_clean = uber_df_clean[uber_df_clean['fare_amount'] > 0]
 
  3. Feature Engineering
+  
 # Ensure pickup_datetime is in datetime format
+
 uber_df['pickup_datetime'] = pd.to_datetime(uber_df['pickup_datetime'])
 
 # 1. Extract hour, day, and month
+
 uber_df['hour'] = uber_df['pickup_datetime'].dt.hour
 uber_df['day'] = uber_df['pickup_datetime'].dt.day
 uber_df['month'] = uber_df['pickup_datetime'].dt.month
 
 # 2. Extract day of the week
+
 uber_df['day_of_week'] = uber_df['pickup_datetime'].dt.day_name()
 
 # 3. Define peak/off-peak hours
+
 def classify_peak(hour):
     if 7 <= hour <= 9 or 17 <= hour <= 19:
         return 'Peak'
@@ -122,9 +129,11 @@ def classify_peak(hour):
 uber_df['peak_time'] = uber_df['hour'].apply(classify_peak)
 
 # Preview the new columns
+
 print(uber_df[['pickup_datetime', 'hour', 'day', 'month', 'day_of_week', 'peak_time']].head())
 
 # Save enhanced dataset
+
 uber_df.to_csv("uber_cleaned_dataset.csv", index=False)
 print("Enhanced dataset saved as 'uber_cleaned_dataset.csv'")
 
@@ -132,9 +141,11 @@ print("Enhanced dataset saved as 'uber_cleaned_dataset.csv'")
 :Created time periods (Peak/Off-Peak), ride distance, and duratio
 
 # Import necessary library
+
 import pandas as pd
 
 # Show basic statistics (mean, std, min, max, quartiles)
+
 print("Descriptive statistics:")
 print(uber_df_clean.describe())
 
