@@ -31,6 +31,9 @@ geolocations
 pip install pandas
 Used Pandas to load and inspect data
 <img width="1052" height="563" alt="PIP INSTALLATION" src="https://github.com/user-attachments/assets/f9815c6a-4d5c-4f48-bc06-8e91bf1bf6e1" />
+<img width="428" height="412" alt="IMPORTPANDAS" src="https://github.com/user-attachments/assets/8d10f32d-1e48-46cb-8cf2-6ccd700c9600" />
+
+
 
 👤 Developed by
 Your Name : MURUNGI DEBORAH
