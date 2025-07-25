@@ -7,11 +7,11 @@ This project is part of the course **Introduction to Big Data Analytics (INSY 84
 
 🎯 Project Objectives
 
-To analyze Uber fare patterns,ride durations, and temporal trends
+:To analyze Uber fare patterns,ride durations, and temporal trends
 
-To create new analytical features (e.g., hour, day, time categories)
+:To create new analytical features (e.g., hour, day, time categories)
 
-To develop an interactive Power BI dashboard showing:
+:To develop an interactive Power BI dashboard showing:
 
 💵 Fare distribution
 
@@ -84,9 +84,7 @@ if 'pickup_datetime' in uber_df.columns:
 <img width="283" height="237" alt="image" src="https://github.com/user-attachments/assets/ff8906af-6d95-459b-9670-6ed33309b512" />
 
 # Drop rows with missing values in important columns
-
 uber_df_clean = uber_df.dropna(subset=['fare_amount', 'pickup_datetime', 'pickup_longitude', 'pickup_latitude'])
-
 # Fill missing passenger count with mode (most common value)
 if 'passenger_count' in uber_df_clean.columns:
     mode_value = uber_df_clean['passenger_count'].mode()[0]
