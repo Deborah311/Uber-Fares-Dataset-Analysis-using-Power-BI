@@ -52,11 +52,6 @@ pip install pandas
 
 Used Pandas to load and inspect data
 
-import pandas as pd
-uber_df = pd.read_csv('uber.csv')
-uber_df.info()
-
-
 
 <img width="428" height="412" alt="IMPORTPANDAS" src="https://github.com/user-attachments/assets/8d10f32d-1e48-46cb-8cf2-6ccd700c9600" />
 
