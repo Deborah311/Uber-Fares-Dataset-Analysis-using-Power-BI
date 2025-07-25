@@ -51,6 +51,9 @@ geolocations
 pip install pandas
 
 Used Pandas to load and inspect data
+import pandas as pd
+uber_df = pd.read_csv('uber.csv')
+uber_df.info()
 
 <img width="1052" height="563" alt="PIP INSTALLATION" src="https://github.com/user-attachments/assets/f9815c6a-4d5c-4f48-bc06-8e91bf1bf6e1" />
 
