@@ -106,6 +106,46 @@ Imported dataset into Power BI Desktop
 
 <img width="1324" height="495" alt="image" src="https://github.com/user-attachments/assets/912a6556-da3d-4d39-ac82-6537bd2d63c3" />
 
+:Built interactive visuals
+
+DAX formulas used:
+
+Count
+Sum
+Average
+Variance
+Standard Variation
+
+all charts needed to be used
+<img width="990" height="547" alt="charts" src="https://github.com/user-attachments/assets/84033f26-13d2-4852-81f3-e7153084e8c0" />
+
+sum of _amount by dropff_longitude
+
+<img width="565" height="319" alt="sum of f amuont" src="https://github.com/user-attachments/assets/2b4d5d15-3148-480c-995e-efb57aff6419" />
+
+
+countof fare_amount by passenger_count
+
+<img width="522" height="324" alt="countfare" src="https://github.com/user-attachments/assets/00a2e128-d6ec-43ff-9abe-8639ea3d3534" />
+
+
+sum of pickup_longitude by pickup_latitude
+
+<img width="296" height="329" alt="sumof pickup" src="https://github.com/user-attachments/assets/37dbd66b-6a21-48d9-9359-8832780a13c9" />
+
+
+pickup_latitude_pickup_longitude
+
+<img width="575" height="364" alt="map" src="https://github.com/user-attachments/assets/2b38e835-0c27-44fb-ae59-7dc8945e694b" />
+
+
+sum of passengers_count by pickup_deteime
+
+
+<img width="611" height="347" alt="sum" src="https://github.com/user-attachments/assets/b0551ce2-a1fe-4226-a2ea-ec684e0bf430" />
+
+count fare by passengers 
+
 👤 Developed by
 Your Name : MURUNGI DEBORAH
 ID : 26020
