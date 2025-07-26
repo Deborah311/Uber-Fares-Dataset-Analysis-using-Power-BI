@@ -187,15 +187,7 @@ Longer ride durations usually result in higher prices
 
 Fare per km is consistent, but slightly higher during peak hours
 
-🔍 Key Results: Discoveries and Pattern Identification
-Insight Area	Finding
-Peak Ride Hours	Morning (7–9 AM) and Evening (5–7 PM)
-Weekly Trends	Highest activity on Fridays and Saturdays
-Fare Patterns	Most rides cost $5–$20, few exceed $100
-Geographic Hotspots	Central Manhattan and Airport Areas
-Distance vs Fare	Strong positive correlation
-Seasonal Trends	Increased rides in summer
-Peak Time Impact	Slight fare surge during high demand hours
+
 
 🧠 Conclusion
 Uber ride demand peaks during commute times
