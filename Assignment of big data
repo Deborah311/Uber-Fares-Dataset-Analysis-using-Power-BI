@@ -1,1 +1,12 @@
+. THIS IS CODE OF CREATING PAND 
 
+pip install pandas
+THIS OF IMPORTING PANDS 
+
+ import pandas as pd
+
+# Replace the file path with the actual path to your dataset file
+uber_df = pd.read_csv("your_dataset_filename.csv")
+
+# Display the first 5 rows to confirm it's loaded
+print(uber_df.head())
