@@ -1,7 +1,7 @@
-. THIS IS CODE OF CREATING PAND 
+. THIS IS CODE OF CREATING PANDAS
 
 pip install pandas
-THIS OF IMPORTING PANDS 
+THIS OF IMPORTING PANDAS 
 
  import pandas as pd
 
@@ -10,3 +10,172 @@ uber_df = pd.read_csv("your_dataset_filename.csv")
 
 # Display the first 5 rows to confirm it's loaded
 print(uber_df.head())
+Dataset Structure and Dimensions
+# View dimensions of the dataset
+print("Dataset shape:", uber_df.shape)
+
+# View column names
+print("\nColumn names:", uber_df.columns.tolist())
+
+# View first 5 rows
+print("\nFirst 5 rows:\n", uber_df.head())
+
+ Data Types and Variable Descriptions
+# Data types and non-null values
+print("\nDataset Info:\n")
+uber_df.info()
+
+# Description of numeric columns
+print("\nSummary statistics (numeric columns):\n", uber_df.describe())
+
+# Description of categorical/text columns (if any)
+print("\nSummary statistics (object columns):\n", uber_df.describe(include='object'))
+
+Initial Data Quality Assessment
+# Check for missing values
+print("\nMissing values per column:\n", uber_df.isnull().sum())
+
+# Check for duplicate rows
+print("\nNumber of duplicate rows:", uber_df.duplicated().sum())
+
+Handle Missing Values & Clean the Dataset
+# Drop rows with missing values (you can also use fillna() if preferred)
+uber_df_clean = uber_df.dropna()
+
+# Drop duplicate rows
+
+uber_df_clean = uber_df_clean.drop_duplicates()
+
+ Export the Cleaned Dataset for Power BI
+# Export cleaned data to CSV
+uber_df_clean.to_csv("uber_cleaned_dataset.csv", index=False)
+
+print("Cleaned dataset exported as 'uber_cleaned_dataset.csv'")
+
+Descriptive Statistics (Mean, Median, Mode, Std Dev)
+# Mean
+print("\nMean:\n", uber_df_clean.mean(numeric_only=True))
+
+# Median
+print("\nMedian:\n", uber_df_clean.median(numeric_only=True))
+
+# Mode
+print("\nMode:\n", uber_df_clean.mode(numeric_only=True).iloc[0])
+
+# Standard Deviation
+print("\nStandard Deviation:\n", uber_df_clean.std(numeric_only=True))
+1. Quartiles, Ranges & Outliers
+
+# Calculate quartiles
+Q1 = uber_df_clean.quantile(0.25, numeric_only=True)
+Q2 = uber_df_clean.quantile(0.50, numeric_only=True)
+Q3 = uber_df_clean.quantile(0.75, numeric_only=True)
+
+# Interquartile Range (IQR)
+IQR = Q3 - Q1
+
+# Range
+data_range = uber_df_clean.max(numeric_only=True) - uber_df_clean.min(numeric_only=True)
+
+print("Q1:\n", Q1)
+print("\nQ2 (Median):\n", Q2)
+print("\nQ3:\n", Q3)
+print("\nIQR:\n", IQR)
+print("\nData Range:\n", data_range)
+
+Outlier Identification (Using IQR Rule)
+# Assuming 'fare_amount' is one of your columns
+fare_col = 'fare_amount'  # Change if your column has a different name
+
+# Define bounds
+lower_bound = Q1[fare_col] - 1.5 * IQR[fare_col]
+upper_bound = Q3[fare_col] + 1.5 * IQR[fare_col]
+
+# Identify outliers
+outliers = uber_df_clean[(uber_df_clean[fare_col] < lower_bound) | (uber_df_clean[fare_col] > upper_bound)]
+
+print(f"\nNumber of outliers in '{fare_col}':", len(outliers))
+
+Visualizations: Fare Distribution
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Histogram
+plt.figure(figsize=(10,6))
+sns.histplot(uber_df_clean[fare_col], bins=50, kde=True)
+plt.title("Fare Amount Distribution")
+plt.xlabel("Fare Amount")
+plt.ylabel("Frequency")
+plt.show()
+
+# Boxplot for Outlier Detection
+plt.figure(figsize=(10,4))
+sns.boxplot(x=uber_df_clean[fare_col])
+plt.title("Boxplot of Fare Amount")
+plt.xlabel("Fare Amount")
+plt.show()
+
+Relationships Between Key Variables
+plt.figure(figsize=(10,6))
+sns.scatterplot(x='distance', y=fare_col, data=uber_df_clean)
+plt.title("Fare Amount vs Distance")
+plt.xlabel("Distance (miles or km)")
+plt.ylabel("Fare Amount")
+plt.show()
+Fare vs Time of Day
+# Convert datetime if not already done
+uber_df_clean['pickup_datetime'] = pd.to_datetime(uber_df_clean['pickup_datetime'])
+
+# Extract hour
+uber_df_clean['hour'] = uber_df_clean['pickup_datetime'].dt.hour
+
+# Plot
+plt.figure(figsize=(10,6))
+sns.boxplot(x='hour', y=fare_col, data=uber_df_clean)
+plt.title("Fare Amount by Hour of Day")
+plt.xlabel("Hour of Day")
+plt.ylabel("Fare Amount")
+plt.show()
+
+Correlation Matrix
+# Compute correlation
+correlation = uber_df_clean.corr(numeric_only=True)
+
+# Heatmap
+plt.figure(figsize=(10,8))
+sns.heatmap(correlation, annot=True, cmap='coolwarm', fmt='.2f')
+plt.title("Correlation Matrix")
+plt.show()
+Create New Analytical Features
+
+# Make sure 'pickup_datetime' is in datetime format
+uber_df['pickup_datetime'] = pd.to_datetime(uber_df['pickup_datetime'])
+
+# Extract time-based features
+uber_df['hour'] = uber_df['pickup_datetime'].dt.hour
+uber_df['day'] = uber_df['pickup_datetime'].dt.day
+uber_df['month'] = uber_df['pickup_datetime'].dt.month
+uber_df['day_of_week'] = uber_df['pickup_datetime'].dt.day_name()
+
+🕓 Peak vs Off-Peak Indicator
+def peak_indicator(hour):
+    return 'Peak' if (7 <= hour <= 9) or (17 <= hour <= 19) else 'Off-Peak'
+
+uber_df['peak_time'] = uber_df['hour'].apply(peak_indicator)
+
+Identify & Encode Categorical Variables
+# Find object type (text) columns
+categorical_cols = uber_df.select_dtypes(include=['object']).columns
+print("Categorical variables:\n", categorical_cols.tolist())
+
+# Save the enhanced dataset to a CSV file for Power BI
+uber_df.to_csv("uber_cleaned_dataset.csv", index=False)
+
+print(" Enhanced dataset saved as 'uber_cleaned_dataset.csv'. You can now import it into Power BI.")
+
+
+
+
+
+
+
