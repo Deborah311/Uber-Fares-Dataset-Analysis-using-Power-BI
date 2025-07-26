@@ -58,12 +58,16 @@ Used Pandas to load and inspect data
 
 <img width="989" height="357" alt="image" src="https://github.com/user-attachments/assets/a4fa264b-fb03-4708-a975-c31548a9c07d" />
 
+<img width="617" height="209" alt="Discriptive st" src="https://github.com/user-attachments/assets/2b736b7a-a095-47a9-af3e-384dd5c7842a"/>
+
+<img width="353" height="43" alt="saved dataset" src="https://github.com/user-attachments/assets/092aa39c-d79e-4a88-ae3e-26336e2a3f4b" />
 
 <img width="852" height="422" alt="image" src="https://github.com/user-attachments/assets/319f44e1-bf54-4008-ad9a-d982a1962cbe" />
 
 
 <img width="311" height="230" alt="image" src="https://github.com/user-attachments/assets/9731219a-caac-4012-ad08-a92dd17b333d" />
 
+<img width="649" height="362" alt="summary" src="https://github.com/user-attachments/assets/77f92e35-0a8d-460c-a05f-73a8eb5375cf" />
 
 <img width="653" height="230" alt="image" src="https://github.com/user-attachments/assets/1b744dcd-35e9-48d5-b1ef-8c19a9a7537c" />
 
