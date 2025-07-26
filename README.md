@@ -219,21 +219,18 @@ Off-Peak Promotions: Encourage rides with reduced fares during low-demand hours
 
 Fare Estimation Enhancement: Improve algorithms using fare-per-km insights
 
-💾 File Export
-The cleaned dataset with new features was saved as:
-
-plaintext
-Copy
-Edit
-uber_cleaned_dataset.csv
-Ready for direct import into Power BI.
 
 
 👤 Developed by
+
 Your Name : MURUNGI DEBORAH
+
 ID : 26020
+
 AUCA  software engineering
+
 Group: B 
+
 Date: 25 July 2025
 
 
