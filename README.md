@@ -1,7 +1,7 @@
 
 # 🚖 Uber Fares Dataset Analysis Using Power BI
 
-## 🔍 Project Overview
+##  Project Overview
 
 This project is part of the course **Introduction to Big Data Analytics (INSY 8413)** at **AUCA**, instructed by **Mr. Eric Maniraguha**. The objective is to explore and analyze the **Uber Fares Dataset** using Python for data cleaning and Power BI for visualization. The analysis aims to uncover patterns in Uber fares, ride durations, time trends, and other operational insights.
 
@@ -73,6 +73,7 @@ Hour, day, month extracted from timestamps
 
 
 <img width="690" height="331" alt="image" src="https://github.com/user-attachments/assets/5a39efbf-beec-44c5-9648-55876c904d3e" />
+
 
 
 <img width="221" height="218" alt="missing values" src="https://github.com/user-attachments/assets/4be5cb99-8494-4b4e-8232-9e7af8f6587e" />
