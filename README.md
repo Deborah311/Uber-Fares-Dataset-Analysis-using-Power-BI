@@ -159,7 +159,9 @@ Slicers:Interactive Filters
 <img width="885" height="440" alt="dashboad" src="https://github.com/user-attachments/assets/d6c82534-8ed4-4605-9b8f-d84385e63a71" />
 
 📊 Analysis: Detailed Findings & Statistical Insights
+
 🚗 1. Fare Distribution
+
 Most Uber fares fall within $5–$20
 
 Box plot visualizations identified outliers exceeding $100 (likely airport/long-distance rides)
@@ -167,6 +169,7 @@ Box plot visualizations identified outliers exceeding $100 (likely airport/long-
 Slightly higher fares during peak hours due to high demand
 
 ⏰ 2. Time-Based Ride Patterns
+
 Busiest hours: 7–9 AM and 5–7 PM (commute times)
 
 Friday and Saturday show highest ride activity
@@ -174,6 +177,7 @@ Friday and Saturday show highest ride activity
 Summer months see higher monthly trends in rides
 
 📍 3. Geographic Trends
+
 Pickup concentrations in central NYC
 
 Hotspots include Midtown and Lower Manhattan
@@ -181,6 +185,7 @@ Hotspots include Midtown and Lower Manhattan
 Heatmaps show higher fare zones near airports and business hubs
 
 📈 4. Correlations & Metrics
+
 Positive correlation between distance and fare
 
 Longer ride durations usually result in higher prices
@@ -190,6 +195,7 @@ Fare per km is consistent, but slightly higher during peak hours
 
 
 🧠 Conclusion
+
 Uber ride demand peaks during commute times
 
 Weekend activity is consistently high, especially Fridays and Saturdays
